@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: "configmap-family"
+data:
+  members: "Sérgio, Daniela, Ivo, Eric"

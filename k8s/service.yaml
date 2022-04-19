@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goserver-service
+spec:
+  selector:
+    app: goserver
+  type: ClusterIP
+  # type: NodePort 
+  # type: LoadBalancer 
+  ports:
+    - name: goserver-service
+      ports: 8087 
+      targetPort: 8087
+      protocol: TCP
+      # nodePort: 30001 # Entre a porta 30.000 > e < 32.767
